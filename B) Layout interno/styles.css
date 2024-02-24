@@ -1,0 +1,137 @@
+/*------------- header ------------------*/
+header {
+    background-color: #B7C9F2;
+    color: #FEFBF6;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Estilos para los enlaces en el menú activos */
+nav a:hover {
+    color: #000000;
+}
+
+/* Estilos para el enlace actual en el menú */
+nav a.current {
+    font-weight: bold;
+    color: #FEFBF6;
+}
+
+
+nav {
+    text-align: center; /* Centra el menú horizontalmente */
+    margin-top: 10px; /* Añade espacio entre el logotipo y el menú */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFBF6;
+}
+
+/*---------------- grid container ---------------------*/
+.outer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+  }
+  
+  .outer-grid-item {
+    background-color: #AC7D88 ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .inner-grid-item {
+    background-color: #E6A4B4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries para hacerlo responsive */
+  @media screen and (max-width: 768px) {
+    .outer-grid {
+      grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .outer-grid {
+      grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna en pantallas pequeñas */
+    }
+  }
+  
+
+/* ---------------------------- footer ----------------------- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.Social-Network{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #FEFBF6;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+.Social-Network a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #B7C9F2
+    ;
+    font-family: 'Lato', sans-serif;
+}
+
+.Social-Network a:hover {
+    color: #B7C9F2; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Agregamos un espacio entre los iconos y el párrafo */
+.Social-Network p {
+    margin-top: 10px;
+}
